@@ -1,12 +1,29 @@
-body {
-  font-family: sans-serif;
+/* styles.css */
+.header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.5s ease; /* Add animation to background color */
 }
 
-h1 {
-  text-align: center;
+.header: hover {
+    background-color: #e74c3c;
+}
+.button {
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.3s ease;
 }
 
-p {
-  text-indent: 1em;
-  padding: 10px;
+.button: hover {
+    background-color: #e74c3c;
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.spinner {
+    animation: spin 2s linear infinite;
 }
